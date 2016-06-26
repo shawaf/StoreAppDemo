@@ -1,0 +1,35 @@
+<resources>
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+
+    </style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorAccent</item>
+        <item name="android:spinnerStyle">@style/AppSpinner</item>
+        <item name="android:editTextStyle">@style/EditTextCustomStyle</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+    </style>
+
+    <style name="AppSpinner" parent="Widget.AppCompat.Spinner"></style>
+
+    <style name="EditTextCustomStyle" parent="Widget.AppCompat.EditText">
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@color/colorPrimary</item>
+    </style>
+    <style name="MyPopupMenu" parent="@style/Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@color/colorPrimary</item>
+    </style>
+
+</resources>

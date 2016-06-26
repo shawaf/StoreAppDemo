@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    local:theme="@style/MyMaterialTheme"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <LinearLayout
+            android:id="@+id/back_toolbar_menulay"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/d48"
+            android:layout_gravity="left|center_vertical"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            >
+            <ImageButton
+                android:id="@+id/back_toolbar_menubtn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/bnt_back"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                />
+            <TextView
+                android:id="@+id/back_toolbar_titletv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:layout_marginLeft="@dimen/d20"
+                android:textColor="@color/main_color"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="@string/new_headline"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/d48"
+            android:layout_toRightOf="@+id/back_toolbar_menulay"
+            ></LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/d48"
+            android:layout_gravity="right"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingRight="10dp"
+
+            >
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#CCCCCC"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                />
+            <Button
+                android:id="@+id/back_toolbar_publishbtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/submit"
+                android:textColor="@color/main_color"
+                android:textSize="15sp"
+                android:gravity="center"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+</android.support.v7.widget.Toolbar>
+    
+    

@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.oncoti.Utilites.RoundedImageView
+            android:id="@+id/proddetails_userimage"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/proddetails_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sushui dubai"
+                android:textColor="@color/light_black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/proddetails_posttime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3 days ago"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/proddetails_prodimage"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:background="@color/colorPrimaryDark"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/main_color" />
+
+        <TextView
+            android:id="@+id/proddetails_categ"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Clothes"
+            android:textColor="@color/main_color"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/proddetails_prodname"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Black and Blue Nida Abaya with red Bibons"
+            android:textColor="#808080"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/proddetails_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="4dp"
+            android:text="Black and Blue Nida Abaya with red BibonsBlack and Blue Nida Abaya with red Bibons Black and Blue Nida Abaya with red BibonsBlack and Blue Nida Abaya with red Bibons"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/proddetails_pricunit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:text="DHS"
+                android:textColor="@color/main_color"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/proddetails_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:text="1500,00"
+                android:textColor="@color/main_color"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:id="@+id/proddetails_tagslay"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/grey_rounder_corner"
+                android:paddingBottom="4dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="4dp"
+                android:text="clothes"
+                android:textColor="@color/light_black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="#FFFFFF"
+                android:text="wow 12"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="#FFFFFF"
+                android:text="Comments 32"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <ImageButton
+                    android:id="@+id/proddetails_likebtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/like_inactive"
+                    android:background="@android:color/transparent"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:gravity="center"
+                    android:text="@string/wow"
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <ImageButton
+                    android:id="@+id/proddetails_comment_btn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/comment_option"
+                    android:background="@android:color/transparent"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:text="@string/comment"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <ImageButton
+                    android:id="@+id/proddetails_knockbtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/knck_option"
+                    android:background="@android:color/transparent"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:gravity="center"
+                    android:text="@string/knock"
+                    android:textSize="14sp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <ImageButton
+                    android:id="@+id/proddetails_sharebtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/shura_option"
+                    android:background="@android:color/transparent"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:gravity="center"
+                    android:text="@string/shura"
+                    android:textSize="14sp"
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/proddetails_buy_btn"
+            style="@style/Base.TextAppearance.AppCompat"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d56"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/button_bg_rounded"
+            android:gravity="center"
+            android:text="@string/buy"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

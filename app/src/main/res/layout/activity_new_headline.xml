@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/headline_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/newheadline_toolbar"
+            layout="@layout/temp_back_toolbar" />
+
+        <View
+            android:id="@+id/toolbar_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/toolbar_bottom_shadwos" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/headline_bottombar"
+        android:layout_below="@+id/headline_topbar"
+        android:orientation="vertical"
+        >
+
+
+
+        <com.oncoti.Utilites.RoundedImageView
+            android:id="@+id/newheadline_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/add_photo_bg"
+            android:scaleType="fitXY"
+            />
+
+            <EditText
+                android:id="@+id/newheadline_message_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="5dp"
+                android:background="@android:color/transparent"
+                android:gravity="top"
+                android:textSize="18sp"
+                android:focusable="true"
+                android:hint="@string/write_headline"
+android:textColor="@color/dark_grey"
+                />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/headline_bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#D8D8D8"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/newheadline_addimage_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/add_image_headline" />
+    </LinearLayout>
+</RelativeLayout>

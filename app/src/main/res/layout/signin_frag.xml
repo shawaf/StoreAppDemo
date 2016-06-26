@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d170"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/d70"
+                        android:layout_height="@dimen/d75"
+                        android:src="@drawable/logo1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d20"
+                    android:layout_marginRight="@dimen/d20"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/signin_username_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d50"
+                        android:layout_marginTop="@dimen/d10"
+                        android:hint="@string/username"
+                        android:paddingLeft="@dimen/d8"
+                        android:paddingRight="@dimen/d8"
+                        android:textColorHint="@color/hint_color"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/fontSizeMediumLarge"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/signin_psw_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d50"
+                        android:layout_marginTop="@dimen/d10"
+                        android:hint="@string/password"
+                        android:paddingLeft="@dimen/d8"
+                        android:paddingRight="@dimen/d8"
+                        android:textColorHint="@color/hint_color"
+                        android:textSize="@dimen/fontSizeMediumLarge"
+                        android:inputType="textPassword"
+                        android:textColor="#606060"
+                        />
+
+                    <Button
+                        android:id="@+id/sign_btn"
+                        style="@style/Base.TextAppearance.AppCompat"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d56"
+                        android:layout_marginTop="@dimen/d20"
+                        android:background="@drawable/button_bg_rounded"
+                        android:gravity="center"
+                        android:text="@string/signin"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/fontSizeMediumLarge"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/singin_forgetpass"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d36"
+                        android:layout_marginTop="@dimen/d30"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="@string/forgot_pass"
+                        android:textColor="#8A8A8A"
+
+                        android:textSize="@dimen/fontSizeMedium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    >
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/signin_progressBar"
+                        android:visibility="gone"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

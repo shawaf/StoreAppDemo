@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/info_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:textColor="@color/main_color"
+            android:textSize="14sp"
+
+            />
+
+        <TextView
+            android:id="@+id/item_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="35dp"
+            android:paddingLeft="20dp"
+            android:textColor="@color/light_black"
+            android:textSize="15sp"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_divider_color_2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/edit_lay"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/light_black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dividor_lay"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/chat_toolbar_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/prod_detils_toolbar"
+            android:background="@drawable/toolbar_bottom_shadwos" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/view_divider_color_2" />
+
+    </LinearLayout>
+
+</LinearLayout>

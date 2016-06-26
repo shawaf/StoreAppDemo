@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="152dp"
+    android:background="@drawable/white_rounded_corner"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="148dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/shuras_prod_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/street" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="148dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:id="@+id/shuras_prod_owner"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="bottom"
+            android:textColor="@color/light_black"
+            android:text="Shushi dubai"
+            android:textStyle="bold"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            />
+
+        <TextView
+            android:id="@+id/shuras_prod_desc"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="top"
+            android:textColor="#808080"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="5dp"
+            android:maxLines="3"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:id="@+id/shuras_prod_price"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/light_black"
+            android:text="1500 DHS"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+                    android:id="@+id/star1"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:src="@drawable/star_active"
+                    />
+                <ImageView
+                    android:id="@+id/star2"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:src="@drawable/star_active"
+                    />
+                <ImageView
+                    android:id="@+id/star3"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:src="@drawable/star_active"
+                    />
+                <ImageView
+                    android:id="@+id/star4"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:src="@drawable/star_inactive"
+                    />
+                <ImageView
+                    android:id="@+id/star5"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:src="@drawable/star_inactive"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/user_shuras"
+                    android:layout_marginRight="3dp"
+                    />
+                <TextView
+                    android:id="@+id/reviewers_counter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/user_shuras"
+                    android:text="45"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

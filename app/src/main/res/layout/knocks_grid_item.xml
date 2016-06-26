@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_rounded_corner"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:gravity="center_vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_vertical"
+            >
+            <com.oncoti.Utilites.RoundedImageView
+                android:id="@+id/knoc_prodowner_iv"
+                android:layout_width="@dimen/d30"
+                android:layout_height="@dimen/d32"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/inter_icon2"
+                android:layout_marginRight="10dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oncoti"
+                    android:textColor="@color/light_black"
+                    android:gravity="center"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 days ago"
+                    android:textColor="@color/dark_grey"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/knock_producowner_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/light_black"
+            android:textSize="11sp"
+            android:text="Shushi Dubai"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            />
+
+    </LinearLayout>
+    <com.etsy.android.grid.util.DynamicHeightImageView
+        android:id="@+id/knock_dynmic_iv"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/street"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/white_rounded_corner"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="7dp"
+            android:background="#FFFFFF"
+            >
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/like_inactive"
+                android:scaleType="fitXY"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:textSize="10sp"
+                android:text="12 Wow"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1.3"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:background="#FFFFFF"
+            >
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/comment"
+                android:scaleType="fitXY"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:text="33 comment"
+                android:textSize="10sp"
+                android:singleLine="true"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/uploadprod_item_iv"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/uploadprod_item_tv"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:inputType="textMultiLine"
+            android:text="product name"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/fontSizeMediumBig"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/uploadprod_deletebtn_lay"
+            android:layout_width="@dimen/d30"
+            android:layout_height="@dimen/d48"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/d6"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/uploadprod_deletebtn"
+                android:layout_width="5dp"
+                android:layout_height="20dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/overflow" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_divider_color_2"
+        />
+</LinearLayout>

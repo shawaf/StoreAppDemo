@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Oncoti</string>
+    <string name="search">Search</string>
+
+    <!-- StartScreen -->
+    <string name="signin">Sign in</string>
+    <string name="creat_acc">Create account</string>
+
+    <!-- SignIn Screen -->
+    <string name="firstname">FirstName</string>
+    <string name="lastname">LastName</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="forgot_pass"><u>Forgot your password?</u></string>
+
+    <!--SharedPreferens Strings-->
+    <string name="loginSharedPrefere">login_prefer</string>
+    <string name="loginStatePrefer">login_state</string>
+    <string name="loggined">loginned</string>
+    <string name="notloggined">notLoginned</string>
+    <!-- Signup Screen -->
+    <string name="email">Email</string>
+    <string name="country">Country</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <array name="countries_arr">
+        <item>Saudi Arabia</item>
+        <item>Egypt</item>
+        <item>Qater</item>
+        <item>UAE</item>
+        <item>Bahrain</item>
+        <item>Moroco</item>
+        <item>Tunnis</item>
+        <item>Yamen</item>
+        <item>Syria</item>
+        <item>Phalesin</item>
+
+    </array>
+
+    <!--Tabs-->
+    <string name="products_tab">PRODUCTS</string>
+    <string name="knocks_tab">KNOCKS</string>
+    <string name="users_tab">USERS</string>
+    <string name="stories_tab">STORIES</string>
+    <string name="headlines_tab">HEADLINES</string>
+    <string name="noprod">No products yet</string>
+
+
+    <!--Navigation Drawer-->
+    <string name="openDrawer">OpenDrawer</string>
+    <string name="closeDrawer">CloseDrawer</string>
+
+    <!--Headlines-->
+    <string name="test_post">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.</string>
+    <string name="title_activity_new_headline">NewHeadlineActivity</string>
+    <string name="new_headline">New Headline</string>
+    <string name="write_headline">Write a headline...</string>
+    <string name="noheadlines">No Headlines yet</string>
+
+    <!--Shuras Screen-->
+    <string name="myshuras_tab">MY SHURAS</string>
+    <string name="ourshuras_tab">OUR SHURAS</string>
+
+    <!--IVisited Screen-->
+    <string name="visited">visited</string>
+    <string name="title_activity_add_new_visit_acitivty">AddNewVisitAcitivty</string>
+    <string name="novisit">No Visits yet</string>
+
+    <!--Notification Screen-->
+    <string name="notifictions">Notifications</string>
+
+    <!--Messges Screen-->
+    <string name="messages">Messages</string>
+
+    <!--Orders Screen-->
+    <string name="orders">Orders</string>
+    <string name="price">Price : </string>
+    <string name="lastupdate">Last update : </string>
+    <string name="title_activity_product_details">ProductDetailsActivity</string>
+
+    <!--Product Details -->
+    <string name="buy">Buy</string>
+    <string name="wow">wow</string>
+    <string name="comment">comment</string>
+    <string name="knock">knock</string>
+    <string name="shura">shura</string>
+    <string name="title_activity_add_new_product">AddNewProductActivity</string>
+
+    <!--Add New Products-->
+    <string name="add_products">Add Products</string>
+    <string name="submit">Submit</string>
+    <string name="submit_all">Submit all</string>
+    <string name="new_product">New Product</string>
+    <string name="note">You can add up to 5 products </string>
+    <array name="categories_list">
+        <item>Clothes</item>
+        <item>Gifts</item>
+        <item>Food</item>
+        <item>Sports</item>
+        <item>Electronics</item>
+    </array>
+    <string name="choose_cat">Choose Category</string>
+
+    <!--New Products-->
+    <string name="prod_name">Product Name</string>
+    <string name="category">Category</string>
+    <string name="pictures">Pictures</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="price_newprod">Price</string>
+    <string name="dhs">DHS</string>
+    <string name="tags">Tags (Put space between every tag)</string>
+    <string name="desc">Description</string>
+
+    <!--Comments Screen-->
+    <string name="write_comment">Write Comment....</string>
+
+    <!--NewVisit Screen-->
+    <string name="newvisit">New Visit</string>
+    <string name="whatshop">Which shop did you visit ? </string>
+    <string name="whatdid">What did you do there ?</string>
+    <string name="identfyloc">Identify the location</string>
+
+    <!--Visit Detials -->
+    <string name="visit_address">Shop No.634 , Morbi Susipit ,10th Street</string>
+    <string name="visit_city">Abu Dhabi, United Arab Emirates</string>
+
+    <!--About Screen-->
+    <string name="about_text">About : Contains Some Inforamtion About the App</string>
+    <string name="about">About</string>
+
+    <!--Profile Screen-->
+    <string name="profile">Profile</string>
+
+    <!--Settings Screen-->
+    <string name="change_photo">CHANGE PHOTO</string>
+    <string name="general">General</string>
+    <string name="cancel">Cancel</string>
+    <string name="changepassword_msg">Enter your Registeration Email :  </string>
+    <string name="address">Address</string>
+    <string name="phone">Phone Number</string>
+    <string name="change_pass">Change Password</string>
+    <string name="contact_info">Contact Infos</string>
+    <string name="notification">Notifictions</string>
+    <string name="confid">Confidentiality</string>
+    <string name="pay">Payment Methods</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="save">Save</string>
+    <string name="logout">Logout</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_visit_details">VisitDetailsActivity</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+</resources>

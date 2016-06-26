@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/prod_detils_toolbar"
+        layout="@layout/prod_toolbar" />
+    <View
+        android:id="@+id/rod_detils_toolbar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/toolbar_bottom_shadwos" />
+    <FrameLayout
+        android:id="@+id/prod_details_fragholder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+</LinearLayout>

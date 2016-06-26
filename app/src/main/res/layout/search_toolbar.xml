@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    local:theme="@style/MyMaterialTheme"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <LinearLayout
+            android:id="@+id/back_toolbar_menulay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d48"
+            android:layout_gravity="left|center_vertical"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            >
+            <ImageButton
+                android:id="@+id/search_toolbar_backbtn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/bnt_back"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                />
+            <EditText
+                android:id="@+id/search_et"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="40dp"
+                android:background="@android:color/transparent"
+                android:textColor="@color/main_color"
+                android:paddingLeft="10dp"
+                android:focusableInTouchMode="true"
+                android:textSize="20sp"
+                android:hint="@string/search"
+                android:textColorHint="@color/main_color"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+</android.support.v7.widget.Toolbar>

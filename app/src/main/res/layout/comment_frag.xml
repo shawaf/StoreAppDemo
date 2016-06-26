@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/comments_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="52dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"></android.support.v7.widget.RecyclerView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/comments_bottombar"
+        android:background="@color/colorPrimaryDark" />
+
+    <LinearLayout
+        android:id="@+id/comments_bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_toLeftOf="@+id/sendbtn_lay"
+            android:background="@android:color/transparent"
+            android:hint="@string/write_comment"
+            android:paddingLeft="10dp"
+            android:textColor="@color/light_black"
+            android:textColorHint="@color/hint_color"
+            android:textSize="15sp"
+            android:lines="2"
+            />
+
+        <LinearLayout
+            android:id="@+id/sendbtn_lay"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/comment_send_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/send"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/newprod_name"
+                android:background="@drawable/et_bg"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="@dimen/d14"
+                android:hint="@string/prod_name"
+                android:inputType="text"
+                android:paddingLeft="@dimen/d8"
+                android:paddingRight="@dimen/d8"
+                android:textColor="#606060"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/fontSizeMediumLarge" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="@dimen/d10">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary" />
+
+                <Spinner
+                    android:id="@+id/categ_spinner"
+                    style="@style/AppSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/categories_list"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/d8"
+                    android:paddingRight="@dimen/d8"
+                    android:prompt="@string/choose_cat"
+                    android:textColor="#606060"
+                    android:textSize="@dimen/fontSizeMediumLarge"
+
+                    />
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/newprod_category"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="@dimen/d10"
+                android:hint="@string/category"
+                android:inputType="text"
+                android:paddingLeft="@dimen/d8"
+                android:paddingRight="@dimen/d8"
+                android:textColor="#606060"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/fontSizeMediumLarge"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/d8"
+                android:paddingRight="@dimen/d8"
+                android:text="@string/pictures"
+                android:textColor="@color/hint_color"
+                android:textSize="@dimen/fontSizeMediumLarge" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/newprod_imag1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/add_photo_bg" />
+
+                <ImageView
+                    android:id="@+id/newprod_imag2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/add_photo_bg" />
+
+                <ImageView
+                    android:id="@+id/newprod_imag3"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/add_photo_bg" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/d10"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/newprod_price"
+                    android:background="@drawable/et_bg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="@string/price_newprod"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/d8"
+                    android:paddingRight="@dimen/d8"
+                    android:textColor="#606060"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="@dimen/fontSizeMediumLarge" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/dhs"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/fontSizeMediumBig" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tags_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"></LinearLayout>
+
+            <EditText
+                android:id="@+id/newprod_tags"
+                android:background="@drawable/et_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/tags"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:minHeight="50dp"
+                android:paddingLeft="@dimen/d8"
+                android:paddingRight="@dimen/d8"
+                android:singleLine="false"
+                android:textColor="#606060"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/fontSizeMediumLarge" />
+
+            <EditText
+                android:id="@+id/newprod_desc"
+                android:background="@drawable/et_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="@dimen/d10"
+                android:hint="@string/desc"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:minHeight="50dp"
+                android:paddingLeft="@dimen/d8"
+                android:paddingRight="@dimen/d8"
+                android:singleLine="false"
+                android:textColor="#606060"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/fontSizeMediumLarge" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:gravity="center_vertical"
+        >
+        <com.oncoti.Utilites.RoundedImageView
+            android:id="@+id/notif_item_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:id="@+id/notif_item_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:maxLines="3"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/notif_item_time"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="right"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp"
+        android:text="12 d"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/colorPrimary"
+    />
+
+</LinearLayout>

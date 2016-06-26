@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal|top">
+
+                    <com.oncoti.Utilites.RoundedImageView
+                        android:id="@+id/ivisited_userimage"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/inter_icon2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal|top"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:gravity="center_vertical|left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/ivisited_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="4dp"
+                            android:text="Shushi dubai"
+                            android:textColor="@color/light_black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="4dp"
+                            android:text="@string/visited"
+                            android:textColor="@color/light_black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/ivisit_placename"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Dubai Mall"
+                            android:textColor="@color/main_color"
+                            android:textStyle="bold"
+
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/ivisited_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginRight="4dp"
+                        android:paddingLeft="2dp"
+                        android:text="3 days ago"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/visitdetials_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="170dp" />
+
+            <com.oncoti.Utilites.CirclePageIndicator
+                android:id="@+id/visitdetials_indicator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp">
+
+                <TextView
+                    android:id="@+id/visitedetails_placename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:text="Shushi dubai"
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ivisit_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/test_post"
+                    android:textColor="#808080"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/dark_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp">
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:gravity="top|left"
+                    android:padding="2dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/map_maker" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/visitdetails_shopaddress"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/visit_address"
+                        android:textColor="#808080"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/visitdetails_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginRight="20dp"
+                        android:text="@string/visit_city"
+                        android:textColor="#808080"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="14dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/map_photo" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

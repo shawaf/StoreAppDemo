@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/settedit_changepass"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/item_changepass_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/change_password"
+            />
+
+        <TextView
+            android:id="@+id/item_changepass_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/light_black"
+            android:textSize="15sp"
+            android:text="@string/change_pass"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settedit_contactsinfo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/item_contacts_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/contact_infos"
+            />
+
+        <TextView
+            android:id="@+id/item_contacts_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/light_black"
+            android:textSize="15sp"
+            android:text="@string/contact_info"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settedit_notifications"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/item_notification_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/notifications"
+            />
+
+        <TextView
+            android:id="@+id/item_notification_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/light_black"
+            android:textSize="15sp"
+            android:text="@string/notification"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settedit_confidentility"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/item_confid_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/confidentiality"
+            />
+
+        <TextView
+            android:id="@+id/item_confid_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/light_black"
+            android:textSize="15sp"
+            android:text="@string/confid"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settedit_paymethods"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/item_pay_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/payment"
+            />
+
+        <TextView
+            android:id="@+id/item_pay_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/light_black"
+            android:textSize="15sp"
+            android:text="@string/pay"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settedit_invitefriends"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/item_invite_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/invite_friends"
+            />
+
+        <TextView
+            android:id="@+id/item_invite_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/light_black"
+            android:textSize="15sp"
+            android:text="@string/invite_friends"
+            />
+    </LinearLayout>
+</LinearLayout>

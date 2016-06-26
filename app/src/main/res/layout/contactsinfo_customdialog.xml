@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/d300"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/contactinfo_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d42"
+        android:layout_marginBottom="@dimen/d14"
+        android:background="@color/main_color"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/d10"
+        android:text="@string/contact_info"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/fontSizeMediumLarge" />
+
+    <TextView
+        android:id="@+id/contactinfo_dialogdec"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d60"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/d16"
+        android:text="@string/changepassword_msg"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/fontSizeMedium"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/d18"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/contactinfo_address"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d46"
+            android:layout_marginBottom="@dimen/d10"
+            android:layout_marginLeft="@dimen/d10"
+            android:layout_marginRight="@dimen/d10"
+            android:background="#B0B0B0"
+            android:gravity="left|center_vertical"
+            android:hint="@string/address"
+            android:paddingBottom="@dimen/d10"
+            android:paddingLeft="@dimen/d16"
+            android:paddingRight="@dimen/d16"
+            android:paddingTop="@dimen/d10"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:selectAllOnFocus="true"
+            />
+
+        <EditText
+            android:id="@+id/contactinfo_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d46"
+            android:layout_marginLeft="@dimen/d10"
+            android:layout_marginRight="@dimen/d10"
+            android:background="#B0B0B0"
+            android:gravity="left|center_vertical"
+            android:hint="@string/phone"
+            android:inputType="phone"
+            android:paddingBottom="@dimen/d10"
+            android:paddingLeft="@dimen/d16"
+            android:paddingRight="@dimen/d16"
+            android:paddingTop="@dimen/d10"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:selectAllOnFocus="true"
+            />
+
+        <ProgressBar
+            android:id="@+id/contactinfo_progbar"
+            android:layout_width="@dimen/d40"
+            android:layout_height="@dimen/d40"
+            android:layout_marginTop="@dimen/d10"
+            android:layout_marginBottom="@dimen/d10"
+            android:indeterminateTint="@color/colorAccent"
+            android:indeterminateTintMode="src_in"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/contactinfo_dialogerror"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/d8"
+        android:gravity="left|center_vertical"
+        android:padding="@dimen/d10"
+        android:textColor="#FF0000"
+        android:textSize="@dimen/fontSizeMedium"
+        android:textStyle="bold"
+        android:visibility="gone"
+
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/d12"
+        android:background="@color/main_color" />
+
+    <LinearLayout
+        android:id="@+id/contactinfo_btnlayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="@dimen/d12"
+        android:layout_marginLeft="@dimen/d10"
+        android:layout_marginRight="@dimen/d10"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/contactinfo_nobtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/d4"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/fontSizeMedium"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/main_color" />
+
+        <Button
+            android:id="@+id/contactinfo_yesbtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/save"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/fontSizeMedium"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

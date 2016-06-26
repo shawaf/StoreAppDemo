@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/signup_rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+               android:layout_weight=".7"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/d70"
+                    android:layout_height="@dimen/d75"
+                    android:src="@drawable/logo1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/d20"
+                android:layout_marginRight="@dimen/d20">
+
+                <EditText
+                    android:id="@+id/singup_firstname_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d50"
+                    android:layout_marginTop="@dimen/d10"
+                    android:textColorHint="@color/hint_color"
+                    android:textColor="#606060"
+                    android:textSize="@dimen/fontSizeMediumLarge"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/d8"
+                    android:paddingRight="@dimen/d8"
+                    android:hint="@string/firstname" />
+
+                <EditText
+                    android:id="@+id/singup_lastname_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d50"
+                    android:layout_marginTop="@dimen/d10"
+                    android:textColorHint="@color/hint_color"
+                    android:textColor="#606060"
+                    android:textSize="@dimen/fontSizeMediumLarge"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/d8"
+                    android:paddingRight="@dimen/d8"
+                    android:hint="@string/lastname" />
+                <EditText
+                    android:id="@+id/singup_username_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d50"
+                    android:layout_marginTop="@dimen/d10"
+                    android:textColorHint="@color/hint_color"
+                    android:textColor="#606060"
+                    android:textSize="@dimen/fontSizeMediumLarge"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/d8"
+                    android:paddingRight="@dimen/d8"
+                    android:hint="@string/username" />
+
+                <EditText
+                    android:id="@+id/signup_email_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d50"
+                    android:layout_marginTop="@dimen/d10"
+                    android:textColorHint="@color/hint_color"
+                    android:textColor="#606060"
+                    android:textSize="@dimen/fontSizeMediumLarge"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="@dimen/d8"
+                    android:paddingRight="@dimen/d8"
+                    android:hint="@string/email" />
+
+                <EditText
+                    android:id="@+id/signup_psw_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d50"
+                    android:layout_marginTop="@dimen/d10"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="@dimen/fontSizeMediumLarge"
+                    android:inputType="textPassword"
+                    android:textColor="#606060"
+                    android:paddingLeft="@dimen/d8"
+                    android:paddingRight="@dimen/d8"
+                    android:hint="@string/password" />
+
+                <Spinner
+                    android:id="@+id/signup_country_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d50"
+                    android:layout_marginTop="@dimen/d10"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="@dimen/fontSizeMediumLarge"
+                    android:paddingRight="@dimen/d8"
+                    android:entries="@array/countries_arr"
+                    android:hint="@string/country"
+                    style="@style/AppSpinner"
+
+                    />
+
+
+                <Button
+                    android:id="@+id/signup_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d56"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/d20"
+                    android:layout_marginBottom="@dimen/d20"
+                    android:background="@drawable/button_bg_rounded"
+                    android:text="@string/creat_acc"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/fontSizeMediumLarge"
+                    android:textAllCaps="false"
+                    style="@style/Base.TextAppearance.AppCompat" />
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/signup_progressBar"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

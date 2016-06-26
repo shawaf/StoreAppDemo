@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    local:theme="@style/MyMaterialTheme"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <LinearLayout
+            android:id="@+id/prod_toolbar_backlay"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/d48"
+            android:layout_gravity="left|center_vertical"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            >
+            <ImageButton
+                android:id="@+id/prod_toolbar_backbtn"
+                android:layout_width="22dp"
+                android:layout_height="20dp"
+                android:src="@drawable/bnt_back"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                />
+            <TextView
+                android:id="@+id/prod_toolbar_titletv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:layout_marginLeft="@dimen/d16"
+                android:textColor="@color/main_color"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/d48"
+            android:layout_toRightOf="@+id/main_toolbar_menulay"
+            ></LinearLayout>
+        <LinearLayout
+            android:id="@+id/prod_options_lay"
+            android:layout_width="@dimen/d40"
+            android:layout_height="@dimen/d48"
+            android:layout_gravity="right"
+            android:layout_alignParentRight="true"
+
+            android:gravity="center"
+            android:layout_marginRight="@dimen/d6"
+            >
+            <ImageButton
+                android:id="@+id/prod_toolbar_optionsbtn"
+                android:layout_width="5dp"
+                android:layout_height="20dp"
+                android:src="@drawable/overflow"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_toLeftOf="@+id/prod_options_lay"
+            android:id="@+id/prod_toolbar_likelay"
+            android:layout_width="@dimen/d40"
+            android:layout_height="@dimen/d48"
+            android:layout_gravity="right"
+            android:gravity="center"
+            >
+            <ImageButton
+                android:id="@+id/prod_toolbar_likebtn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/like"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/prod_toolbar_searchlay"
+            android:layout_width="@dimen/d40"
+            android:layout_height="@dimen/d48"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:layout_toLeftOf="@+id/prod_toolbar_likelay"
+            >
+            <ImageButton
+                android:id="@+id/prod_toolbar_searchbtn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/search"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+</android.support.v7.widget.Toolbar>
+    
+    
